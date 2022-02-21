@@ -8,13 +8,15 @@ int main(){
 	
 	for(int i=0;i<n-1;i++){   // for arr size of 7 it has to go 6 passes to complete the sorting
 		int min = i;
+		
 		for(int j=i+1;j<n;j++){
 			if(a[j]<a[min]){
 				min=j;
 			}
 		}
+		
 		if(min!=i){
-		// swapping 
+			// swapping 
 			int temp = a[i];
 			a[i]= a[min];
 			a[min] = temp;	
